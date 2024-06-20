@@ -1,0 +1,10 @@
+.header {
+  margin: 45px auto 0;
+  max-width: 880px;
+  width: 100%;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+.header__logo {
+  margin-bottom: 30px;
+}
