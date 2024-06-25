@@ -1,5 +1,9 @@
 # Project 3: Around The U.S.
 
+## Project Description
+This project is a website that showcases an explorer's journey across the U.S. Users can interact with various buttons and mark their favorite locations to explore more about the places they enjoy.
+
+
 ## DemoVideo
 Here's a demo of the project:
 
