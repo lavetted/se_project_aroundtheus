@@ -1,5 +1,11 @@
 # Project 3: Around The U.S.
 
+## DemoVideo
+Here's a demo of the project:
+
+[![Watch the video](https://vimeo.com/967288080?share=copy)]
+
+
 ### Overview  
 
 * Intro  

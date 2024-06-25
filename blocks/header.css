@@ -8,3 +8,17 @@
 .header__logo {
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 480px) {
+  .header {
+    margin-top: 28px;
+    padding-left: 27px;
+    box-sizing: border-box;
+  }
+
+  .header__logo {
+    margin-bottom: 36px;
+    width: 126px;
+    height: 24px;
+  }
+}
