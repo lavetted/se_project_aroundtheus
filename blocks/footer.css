@@ -8,7 +8,7 @@
   line-height: 21.78px;
   color: rgba(84, 84, 84, 1);
   margin-top: 65px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 480px) {
@@ -16,7 +16,7 @@
     max-width: 282px;
     font-size: 14px;
     line-height: 16.94px;
-    margin-top: 55px;
+    margin-top: 48px;
     margin-bottom: 36px;
   }
 }
