@@ -26,6 +26,7 @@
   height: 50px;
   background-color: black;
   color: #fff;
+  font-size: large;
 }
 
 .modal__button:hover {
@@ -68,4 +69,30 @@
   height: 40px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media screen and (max-width: 320px) {
+  .modal__heading {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 0 45px 0;
+  }
+
+  .modal__button {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .modal__input {
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  }
+
+  .modal__close {
+    right: 8px;
+    top: -65px;
+    width: 26px;
+    height: 26px;
+    padding: 5px;
+    font-size: 12px;
+  }
 }
