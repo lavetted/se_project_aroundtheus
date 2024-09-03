@@ -43,7 +43,7 @@
         <p class="footer__copyright">&copy; 2024 Around the U.S.</p>
       </footer>
     </div>
-
+    <!--the buttons for add and edit-->
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
         <button class="modal__close"></button>
@@ -68,19 +68,53 @@
       </div>
     </div>
 
+    <div class="modal" id="add-card-modal">
+      <div class="modal__container">
+        <button class="modal__close"></button>
+        <p class="modal__heading">New Place</p>
+        <form class="modal__form" id="add-card-form">
+          <input
+            class="modal__input modal__input_type_title"
+            type="text"
+            placeholder="Title"
+            name="title"
+          />
+          <input
+            class="modal__input modal__input_type_url"
+            type="url"
+            placeholder="Image URL"
+            name="url"
+          />
+          <button class="modal__button">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="preview-card-modal">
+      <div class="popup__content popup__content_type_preview">
+        <button class="modal__close" type="button"></button>
+        <p class="modal__title"></p>
+        <img src="" alt="" class="modal__image" />
+      </div>
+    </div>
+
+    <!--Cards-->
     <template id="card-template">
       <li class="card">
+        <button class="card__delete-button" type="button"></button>
         <img
           src="./images/yosemite-valley.jpg"
           alt="yosemite valley"
           class="card__image"
         />
+
         <div class="card__description">
           <h2 class="card__title">Yosemite Valley</h2>
           <button class="card__like-button" type="button"></button>
         </div>
       </li>
       <li class="card">
+        <button class="card__delete-button" type="button"></button>
         <img
           src="./images/lake-louise.png"
           alt="lake louise"
@@ -92,6 +126,7 @@
         </div>
       </li>
       <li class="card">
+        <button class="card__delete-button" type="button"></button>
         <img
           src="./images/bald-mountains.png"
           alt="bald mountains"
@@ -103,6 +138,7 @@
         </div>
       </li>
       <li class="card">
+        <button class="card__delete-button" type="button"></button>
         <img src="./images/latemar.png" alt="latemar" class="card__image" />
         <div class="card__description">
           <h2 class="card__title">Latemar</h2>
@@ -110,6 +146,7 @@
         </div>
       </li>
       <li class="card">
+        <button class="card__delete-button" type="button"></button>
         <img
           src="./images/vanoise-national-park.png"
           alt="Vanoise National Park"
@@ -121,6 +158,7 @@
         </div>
       </li>
       <li class="card">
+        <button class="card__delete-button" type="button"></button>
         <img
           src="./images/lago-di-braies.png"
           alt="Lago di Braise"

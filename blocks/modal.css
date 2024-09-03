@@ -6,8 +6,17 @@
   right: 0;
   background-color: rgb(0, 0, 0, 0.5);
   z-index: 999;
-  display: none;
+  display: flex;
   padding: 0 19px;
+  transition: opacity 1s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__image {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
 }
 
 .modal__heading {
@@ -17,7 +26,8 @@
 }
 
 .modal_opened {
-  display: flex;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal__button {
