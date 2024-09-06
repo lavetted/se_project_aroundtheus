@@ -82,10 +82,10 @@
           <input
             class="modal__input modal__input_type_url"
             type="url"
-            placeholder="Image URL"
+            placeholder="Image link"
             name="url"
           />
-          <button class="modal__button">Save</button>
+          <button class="modal__button">Create</button>
         </form>
       </div>
     </div>
@@ -93,7 +93,6 @@
     <div class="modal" id="preview-card-modal">
       <div class="modal__content modal__content_type_preview">
         <button class="modal__close" type="button"></button>
-        <p class="modal__title"></p>
         <img src="" alt="" class="modal__image" />
         <div class="modal-caption"></div>
       </div>
@@ -103,75 +102,14 @@
     <template id="card-template">
       <li class="card">
         <button class="card__delete-button" type="button"></button>
-        <img
-          src="./images/yosemite-valley.jpg"
-          alt="yosemite valley"
-          class="card__image"
-        />
+        <img src="" alt="" class="card__image" />
 
         <div class="card__description">
-          <h2 class="card__title">Yosemite Valley</h2>
-          <button class="card__like-button" type="button"></button>
-        </div>
-      </li>
-      <li class="card">
-        <button class="card__delete-button" type="button"></button>
-        <img
-          src="./images/lake-louise.png"
-          alt="lake louise"
-          class="card__image"
-        />
-        <div class="card__description">
-          <h2 class="card__title">Lake Louise</h2>
-          <button class="card__like-button" type="button"></button>
-        </div>
-      </li>
-      <li class="card">
-        <button class="card__delete-button" type="button"></button>
-        <img
-          src="./images/bald-mountains.png"
-          alt="bald mountains"
-          class="card__image"
-        />
-        <div class="card__description">
-          <h2 class="card__title">Bald Mountains</h2>
-          <button class="card__like-button" type="button"></button>
-        </div>
-      </li>
-      <li class="card">
-        <button class="card__delete-button" type="button"></button>
-        <img src="./images/latemar.png" alt="latemar" class="card__image" />
-        <div class="card__description">
-          <h2 class="card__title">Latemar</h2>
-          <button class="card__like-button" type="button"></button>
-        </div>
-      </li>
-      <li class="card">
-        <button class="card__delete-button" type="button"></button>
-        <img
-          src="./images/vanoise-national-park.png"
-          alt="Vanoise National Park"
-          class="card__image"
-        />
-        <div class="card__description">
-          <h2 class="card__title">Vanoise National Park</h2>
-          <button class="card__like-button" type="button"></button>
-        </div>
-      </li>
-      <li class="card">
-        <button class="card__delete-button" type="button"></button>
-        <img
-          src="./images/lago-di-braies.png"
-          alt="Lago di Braise"
-          class="card__image"
-        />
-        <div class="card__description">
-          <h2 class="card__title">Lago di Braies</h2>
+          <h2 class="card__title"></h2>
           <button class="card__like-button" type="button"></button>
         </div>
       </li>
     </template>
-
     <script src="./scripts/index.js"></script>
   </body>
 </html>
