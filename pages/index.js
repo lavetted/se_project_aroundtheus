@@ -1,4 +1,4 @@
-import Card from "../scripts/card.js";
+import Card from "../scripts/CardFix.js";
 
 const initialCards = [
   {
