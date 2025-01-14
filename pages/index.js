@@ -1,4 +1,5 @@
-import Card from "../scripts/CardFix.js";
+import Card from "../scripts/Card.js";
+import FormValidator from "../Components/FormValidator.js";
 
 const initialCards = [
   {
@@ -34,11 +35,6 @@ const cardData = {
   link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
 };
 
-const card = new Card(cardData, "#card-template");
-card.getView();
-
-import FormValidator from "../scripts/FormValidator.js";
-
 const validationConfig = {
   inputSelector: ".modal__input",
   submitButtonSelector: ".modal__button",
@@ -47,23 +43,6 @@ const validationConfig = {
   errorClass: "modal__error_visible",
   formSelector: ".modal__form,",
 };
-
-// Select the forms
-
-const editProfileForm = document.querySelector("#edit-profile-form");
-
-// Create instances of FormValidator for each form
-
-const editProfileValidator = new FormValidator(
-  editProfileForm,
-  validationConfig
-);
-
-// Enable validation
-
-editProfileValidator.enableValidation();
-
-// General functions
 
 const profileEditButton = document.querySelector("#profile-edit-button");
 const profileEditModal = document.querySelector("#profile-edit-modal");
@@ -85,8 +64,15 @@ const profileDescriptionInput = document.querySelector(
 const addNewCardButton = document.querySelector(".profile__add-button");
 const profileEditForm = profileEditModal.querySelector(".modal__form");
 const addCardForm = addCardModal.querySelector(".modal__form");
+const editProfileValidator = new FormValidator(
+  profileEditForm,
+  validationConfig
+);
 const addCardValidator = new FormValidator(addCardForm, validationConfig);
+
+editProfileValidator.enableValidation();
 addCardValidator.enableValidation();
+
 const cardTitleInput = addCardForm.querySelector(".modal__input_type_title");
 const cardUrlInput = addCardForm.querySelector(".modal__input_type_url");
 const cardListEl = document.querySelector(".cards__list");
